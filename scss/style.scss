@@ -1,0 +1,302 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    height: auto;
+    max-width: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 1vw;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: #ffffff;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+._container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15vw;
+}
+
+._ibg {
+    position: relative;
+}
+
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.header {
+    margin-top: 5vw;
+
+    &_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_logo {
+        display: block;
+        width: 15vw;
+        box-sizing: content-box
+    }
+
+    &_info {}
+
+    &_phone {
+        & a {
+            color: #333333;
+            font-weight: 500;
+            font-size: 1.5vw;
+        }
+
+        margin-bottom: 5px;
+
+    }
+
+    &_address {
+        margin-bottom: 5px;
+
+        & a {
+            color: #333333;
+            font-size: 1.2vw;
+        }
+    }
+
+    &_email {
+        & a {
+            color: #cf3e28;
+        }
+    }
+}
+
+.about {
+    margin-top: 4.5vw;
+
+    &_container {}
+
+    &_item {
+        margin-bottom: 2.1vw;
+        font-size: 1.35vw;
+        line-height: 2vw;
+        letter-spacing: 0.001vw;
+    }
+}
+
+.word {
+    &_container {
+        position: relative;
+    }
+
+    &_img {
+        width: 100%;
+    }
+
+    &_items {
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        background-color: #cf3e28;
+        width: 68vw;
+        height: 39.5vw;
+    }
+}
+
+.word-about {
+
+    background-color: #e1e5e6;
+
+    &_container {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0 8vw;
+    }
+
+    &_items {
+
+        margin-top: 3vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 1vw;
+
+        &:last-child {
+            margin-bottom: 0.4vw;
+            margin-top: 0;
+        }
+    }
+
+    &_item {
+        border-radius: 1vw;
+        width: 27vw;
+        height: 12vw;
+        background-color: #ffffff;
+        padding: 1.8vw;
+    }
+
+    &_header {
+        font-size: 1.5vw;
+        font-weight: 500;
+        margin-bottom: 0.8vw;
+    }
+
+    &_text {
+        font-weight: 400;
+        font-size: 1vw;
+    }
+}
+
+.excel {
+    background-color: #dcdddd;
+
+    &_container {
+        position: relative;
+    }
+
+    &_img {
+        width: 100%;
+    }
+
+    &_items {
+        position: absolute;
+        top: 52.8%;
+        left: 50%;
+        z-index: 100;
+        transform: translate(-50%, -50%);
+        width: 59vw;
+        height: 33vw;
+        background-color: #cf3e28;
+    }
+
+    &_item {}
+}
+
+.excel-about {
+    &_container {}
+
+    &_img {
+        width: 100%;
+    }
+}
+
+.advantages {
+    background-color: #414244;
+
+    &_container {
+        margin: 0 auto;
+        color: #ffffff;
+        // width: 70vw;
+    }
+
+    &_header {
+        margin-top: 5vw;
+        margin-bottom: 3vw;
+        font-weight: 400;
+        font-size: 2.5vw;
+    }
+
+    &_items {}
+
+    &_item {
+        line-height: 1.7vw;
+        font-weight: 400;
+        font-size: 1.2vw;
+        margin-bottom: 2vw;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0.9vw;
+            left: -2vw;
+            z-index: 10;
+            width: 1vw;
+            height: 0.1vw;
+            background-color: #ffffff;
+        }
+    }
+}
+
+.footer {
+    background-color: #414244;
+    padding-bottom: 5vw;
+
+    &_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2vw;
+    }
+    &_logo{
+        display: block;
+        width: 13vw;
+        box-sizing: content-box
+    }
+    &_contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &_text {
+        color: #7d8082;
+        font-size: 2vw;
+        margin-right: 2vw;
+    }
+
+    &_phone {
+        & a {
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 2vw;
+        }
+    }
+}
