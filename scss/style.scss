@@ -138,6 +138,7 @@ body {
     }
 
     &_items {
+
         position: absolute;
         top: 44%;
         left: 50%;
@@ -148,6 +149,28 @@ body {
         height: 39.5vw;
     }
 }
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+
+    &-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    &-slide{
+        width: 100%;
+        height: 100%; 
+
+        & img{
+            object-fit: cover;
+            width: 100%;
+        height: 100%; 
+        }
+    }
+}
+
 
 .word-about {
 
@@ -275,11 +298,13 @@ body {
         justify-content: space-between;
         margin-top: 2vw;
     }
-    &_logo{
+
+    &_logo {
         display: block;
         width: 13vw;
         box-sizing: content-box
     }
+
     &_contact {
         display: flex;
         flex-direction: row;

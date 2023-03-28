@@ -11,7 +11,21 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -36,7 +50,7 @@
         </div>
       </header>
 
-      <div class="about">
+      <div class="about wow animate__animated animate__fadeInUp">
         <div class="about_container _container">
           <p class="about_item">
             Компания AIGEN - российский разработчик программного обеспечения для
@@ -57,7 +71,28 @@
         <div class="word_container">
           <img class="word_img" src="source/desktop.jpg" alt="word" />
           <div class="word_items">
-            <div class="word_item"></div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="swiper_img"
+                    src="https://placehold.co/600x400/orange/FFF"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="swiper_img"
+                    src="https://placehold.co/600x400/green/FFF"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="swiper_img"
+                    src="https://placehold.co/600x400/yellow/FFF"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -130,12 +165,33 @@
         <div class="excel_container">
           <img class="excel_img" src="source/excel.jpg" alt="excel" />
           <div class="excel_items">
-            <div class="excel_item"></div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="swiper_img"
+                    src="https://placehold.co/600x400/orange/FFF"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="swiper_img"
+                    src="https://placehold.co/600x400/green/FFF"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="swiper_img"
+                    src="https://placehold.co/600x400/yellow/FFF"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="excel-about">
+      <div class="excel-about wow animate__animated animate__fadeInUp">
         <div class="excel-about_container"></div>
         <img class="excel-about_img" src="source/excel_about.jpg" />
       </div>
@@ -144,26 +200,26 @@
         <div class="advantages_container _container">
           <div class="advantages_header">Наша система позволит Вам:</div>
           <div class="advantages_items">
-            <div class="advantages_item">
+            <div class="advantages_item wow animate__animated animate__slideInLeft">
               Перевести в единую безопасную электронную среду процессы работы с
               контентом (тексты, таблицы, изображения, графики) из ваших
               ит-систем в привычном интерфейсе, аналогичном word и excel с
               возможностью защиты от утечки (запрет копирования, защита от
               фотографирования)
             </div>
-            <div class="advantages_item">
+            <div class="advantages_item wow animate__animated animate__slideInLeft">
               Снизить временные затраты на разработку, пересылку, согласование
               документов
             </div>
-            <div class="advantages_item">
+            <div class="advantages_item wow animate__animated animate__slideInLeft">
               Предоставить возможность совместной работы над документами без
               обязательного нахождения сотрудников в офисе
             </div>
-            <div class="advantages_item">
+            <div class="advantages_item wow animate__animated animate__slideInLeft">
               Автоматизировать процессы, связанные с быстрым созданием и
               редактированием типовых документов
             </div>
-            <div class="advantages_item">
+            <div class="advantages_item wow animate__animated animate__slideInLeft">
               Создать электронный архив и упорядочить хранение версий документов
             </div>
           </div>
@@ -172,16 +228,17 @@
 
       <footer class="footer">
         <div class="footer_container _container">
-          <img class="footer_logo" src="source/logo_footer.jpg">
+          <img class="footer_logo" src="source/logo_footer.jpg" />
           <div class="footer_contact">
-            <div class="footer_text">Позвоните нам: </div>
+            <div class="footer_text">Позвоните нам:</div>
             <div class="footer_phone">
               <a href="tel:84950110607">+7 495 011-06-07</a>
             </div>
           </div>
         </div>
       </footer>
-
     </div>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
