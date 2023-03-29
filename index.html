@@ -34,7 +34,7 @@
           <div class="header_logo">
             <img src="source/header/logo.jpg" />
           </div>
-          <div class="heder_info">
+          <div class="header_info">
             <div class="header_phone">
               <a href="tel:84950110607">+7 (495) 011-0607</a>
             </div>
@@ -60,7 +60,7 @@
           <p class="about_item">
             Цель нашей работы – предоставление удобных, эффективных, безопасных
             инструментов для создания, редактирования и обмена документами в
-            соответствии с бизнес-процессами Вашей организации. Наш фокус –
+            соответствии с бизнес-процессами Вашей организации.<br/>Наш фокус –
             инструменты для создания и редактирования документов, организации
             оптимального документооборота.
           </p>
@@ -69,7 +69,11 @@
 
       <div class="word">
         <div class="word_container">
-          <img class="word_img" src="source/desktop.jpg" alt="word" />
+          <picture>
+            <source class="word_img" srcset="source/desktop.webp" type="image/webp"/>
+            <img class="word_img" src="source/desktop.jpg" />
+          </picture>
+          <!-- <img class="word_img" src="source/desktop.jpg" alt="word" /> -->
           <div class="word_items">
             <div class="swiper">
               <div class="swiper-wrapper">
@@ -200,26 +204,36 @@
         <div class="advantages_container _container">
           <div class="advantages_header">Наша система позволит Вам:</div>
           <div class="advantages_items">
-            <div class="advantages_item wow animate__animated animate__slideInLeft">
+            <div
+              class="advantages_item wow animate__animated animate__slideInLeft"
+            >
               Перевести в единую безопасную электронную среду процессы работы с
               контентом (тексты, таблицы, изображения, графики) из ваших
               ит-систем в привычном интерфейсе, аналогичном word и excel с
               возможностью защиты от утечки (запрет копирования, защита от
               фотографирования)
             </div>
-            <div class="advantages_item wow animate__animated animate__slideInLeft">
+            <div
+              class="advantages_item wow animate__animated animate__slideInLeft"
+            >
               Снизить временные затраты на разработку, пересылку, согласование
               документов
             </div>
-            <div class="advantages_item wow animate__animated animate__slideInLeft">
+            <div
+              class="advantages_item wow animate__animated animate__slideInLeft"
+            >
               Предоставить возможность совместной работы над документами без
               обязательного нахождения сотрудников в офисе
             </div>
-            <div class="advantages_item wow animate__animated animate__slideInLeft">
+            <div
+              class="advantages_item wow animate__animated animate__slideInLeft"
+            >
               Автоматизировать процессы, связанные с быстрым созданием и
               редактированием типовых документов
             </div>
-            <div class="advantages_item wow animate__animated animate__slideInLeft">
+            <div
+              class="advantages_item wow animate__animated animate__slideInLeft"
+            >
               Создать электронный архив и упорядочить хранение версий документов
             </div>
           </div>
@@ -227,7 +241,7 @@
       </div>
 
       <footer class="footer">
-        <div class="footer_container _container">
+        <div class="footer_container">
           <img class="footer_logo" src="source/logo_footer.jpg" />
           <div class="footer_contact">
             <div class="footer_text">Позвоните нам:</div>

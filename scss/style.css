@@ -54,7 +54,7 @@ body {
 ._container {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 15vw;
+  padding: 0 9.89vw;
 }
 
 ._ibg {
@@ -72,7 +72,7 @@ body {
 }
 
 .header {
-  margin-top: 5vw;
+  margin-top: 3.6vw;
 }
 .header_container {
   display: flex;
@@ -85,35 +85,46 @@ body {
   width: 15vw;
   box-sizing: content-box;
 }
+.header_info {
+  margin-top: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
 .header_phone {
   margin-bottom: 5px;
 }
 .header_phone a {
   color: #333333;
   font-weight: 500;
-  font-size: 1.5vw;
-}
-.header_address {
-  margin-bottom: 5px;
+  font-size: 1.6vw;
 }
 .header_address a {
   color: #333333;
-  font-size: 1.2vw;
+  font-size: 1.04vw;
+  line-height: 1.44vw;
 }
 .header_email a {
   color: #cf3e28;
+  margin-right: 0.3vw;
 }
 
 .about {
-  margin-top: 4.5vw;
+  margin-top: 5.2vw;
 }
 .about_item {
-  margin-bottom: 2.1vw;
-  font-size: 1.35vw;
-  line-height: 2vw;
-  letter-spacing: 0.001vw;
+  margin-bottom: 2.33vw;
+  font-size: 1.6vw;
+  line-height: 2.15vw;
+  letter-spacing: 0.005vw;
+}
+.about_item:last-child {
+  margin-bottom: 0;
 }
 
+.word {
+  margin-top: 3.97vw;
+}
 .word_container {
   position: relative;
 }
@@ -152,38 +163,45 @@ body {
 
 .word-about {
   background-color: #e1e5e6;
+  padding-bottom: 4.3vw;
 }
 .word-about_container {
   display: flex;
   flex-direction: column;
-  padding: 0 8vw;
+  padding: 0 5vw;
 }
 .word-about_items {
-  margin-top: 3vw;
+  margin-top: 3.1vw;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin-bottom: 1vw;
+  margin-bottom: 1.3vw;
 }
 .word-about_items:last-child {
-  margin-bottom: 0.4vw;
+  margin-bottom: 0vw;
   margin-top: 0;
+}
+.word-about_items:last-child .word-about_items_item {
+  padding-top: 3vw;
 }
 .word-about_item {
   border-radius: 1vw;
-  width: 27vw;
-  height: 12vw;
+  width: 29vw;
+  height: 13.4vw;
   background-color: #ffffff;
-  padding: 1.8vw;
+  padding: 1.8vw 0 0 1.8vw;
 }
 .word-about_header {
-  font-size: 1.5vw;
+  font-size: 1.6vw;
+  line-height: 1.8vw;
   font-weight: 500;
-  margin-bottom: 0.8vw;
+  margin-bottom: 0.5vw;
 }
 .word-about_text {
   font-weight: 400;
-  font-size: 1vw;
+  font-size: 1.3vw;
+  margin-right: 0.1vw;
+  line-height: 1.61vw;
 }
 
 .excel {
@@ -197,12 +215,12 @@ body {
 }
 .excel_items {
   position: absolute;
-  top: 52.8%;
+  top: 52.77%;
   left: 50%;
   z-index: 100;
   transform: translate(-50%, -50%);
   width: 59vw;
-  height: 33vw;
+  height: 32.91vw;
   background-color: #cf3e28;
 }
 .excel-about_img {
@@ -217,16 +235,17 @@ body {
   color: #ffffff;
 }
 .advantages_header {
-  margin-top: 5vw;
-  margin-bottom: 3vw;
+  margin-top: 4.5vw;
+  padding-bottom: 2.2vw;
   font-weight: 400;
   font-size: 2.5vw;
+  letter-spacing: 0.06vw;
 }
 .advantages_item {
-  line-height: 1.7vw;
+  line-height: 2.1vw;
   font-weight: 400;
-  font-size: 1.2vw;
-  margin-bottom: 2vw;
+  font-size: 1.58vw;
+  margin-bottom: 2.4vw;
   position: relative;
 }
 .advantages_item::before {
@@ -248,12 +267,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 2vw;
+  margin-top: 4vw;
+  padding: 0 8.8vw;
 }
 .footer_logo {
   display: block;
-  width: 13vw;
+  width: 14vw;
   box-sizing: content-box;
+  margin-top: -0.3vw;
 }
 .footer_contact {
   display: flex;
@@ -262,11 +283,18 @@ body {
 }
 .footer_text {
   color: #7d8082;
-  font-size: 2vw;
-  margin-right: 2vw;
+  font-size: 2.5vw;
+  margin-right: 1.1vw;
+  margin-top: -0.5vw;
+  letter-spacing: 0.06vw;
+}
+.footer_phone {
+  margin-top: -1vw;
 }
 .footer_phone a {
   color: #ffffff;
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 2.8vw;
+  margin-right: 1.3vw;
+  letter-spacing: -0.07vw;
 }/*# sourceMappingURL=style.css.map */

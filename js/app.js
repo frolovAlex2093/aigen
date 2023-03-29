@@ -1,7 +1,7 @@
-ScrollReveal().reveal('.word-about_item', { delay: 400,  reset: true, duration: 400, interval: 50  });
+ScrollReveal().reveal('.word-about_item', { delay: 400, duration: 400, interval: 50  });
 
 const swiper = new Swiper('.swiper', {
-    speed: 400,
+    speed: 1000,
     spaceBetween: 100,
     effect: 'fade',
     loop: true,
