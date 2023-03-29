@@ -32,7 +32,11 @@
       <header class="header">
         <div class="header_container _container">
           <div class="header_logo">
-            <img src="source/header/logo.jpg" />
+            <picture>
+              <source srcset="source/header/logo.jpg"/>
+              <img src="source/header/logo.webp" />
+            </picture>
+            
           </div>
           <div class="header_info">
             <div class="header_phone">
@@ -60,7 +64,7 @@
           <p class="about_item">
             Цель нашей работы – предоставление удобных, эффективных, безопасных
             инструментов для создания, редактирования и обмена документами в
-            соответствии с бизнес-процессами Вашей организации.<br/>Наш фокус –
+            соответствии с бизнес-процессами Вашей организации.<br />Наш фокус –
             инструменты для создания и редактирования документов, организации
             оптимального документооборота.
           </p>
@@ -70,8 +74,8 @@
       <div class="word">
         <div class="word_container">
           <picture>
-            <source class="word_img" srcset="source/desktop.webp" type="image/webp"/>
-            <img class="word_img" src="source/desktop.jpg" />
+            <source class="word_img" srcset="source/desktop.jpg" />
+            <img class="word_img" src="source/desktop.webp" />
           </picture>
           <!-- <img class="word_img" src="source/desktop.jpg" alt="word" /> -->
           <div class="word_items">
@@ -167,7 +171,10 @@
 
       <div class="excel">
         <div class="excel_container">
-          <img class="excel_img" src="source/excel.jpg" alt="excel" />
+          <picture>
+            <source srcset="source/excel.jpg" class="excel_img" />
+            <img class="excel_img" src="source/excel.webp" alt="excel" />
+          </picture>
           <div class="excel_items">
             <div class="swiper">
               <div class="swiper-wrapper">
@@ -197,7 +204,14 @@
 
       <div class="excel-about wow animate__animated animate__fadeInUp">
         <div class="excel-about_container"></div>
-        <img class="excel-about_img" src="source/excel_about.jpg" />
+        <picture>
+          <source srcset="source/excel_about.jpg" class="excel-about_img" />
+          <img
+            class="excel-about_img"
+            src="source/excel_about.webp"
+            alt="excel"
+          />
+        </picture>
       </div>
 
       <div class="advantages">
@@ -242,7 +256,10 @@
 
       <footer class="footer">
         <div class="footer_container">
-          <img class="footer_logo" src="source/logo_footer.jpg" />
+          <picture>
+            <source srcset="source/logo_footer.jpg" class="footer_logo" />
+            <img class="footer_logo" src="source/logo_footer.webp" />
+          </picture>
           <div class="footer_contact">
             <div class="footer_text">Позвоните нам:</div>
             <div class="footer_phone">
