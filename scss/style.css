@@ -72,7 +72,8 @@ body {
 }
 
 .header {
-  margin-top: 3.6vw;
+  margin-top: 3.5vw;
+  margin-bottom: 23.9vw;
 }
 .header_container {
   display: flex;
@@ -82,7 +83,7 @@ body {
 }
 .header_logo {
   display: block;
-  width: 15vw;
+  width: 12vw;
   box-sizing: content-box;
 }
 .header_info {
@@ -110,7 +111,9 @@ body {
 }
 
 .about {
-  margin-top: 5.2vw;
+  position: fixed;
+  z-index: 100;
+  margin-top: 13.3vw;
 }
 .about_item {
   margin-bottom: 2.33vw;
@@ -122,9 +125,6 @@ body {
   margin-bottom: 0;
 }
 
-.word {
-  margin-top: 3.97vw;
-}
 .word_container {
   position: relative;
 }
@@ -137,9 +137,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  background-color: #cf3e28;
-  width: 68vw;
-  height: 39.5vw;
+  width: 66.6vw;
+  height: 38.3vw;
 }
 
 .swiper {
@@ -168,7 +167,7 @@ body {
 .word-about_container {
   display: flex;
   flex-direction: column;
-  padding: 0 5vw;
+  padding: 0 4.7vw;
 }
 .word-about_items {
   margin-top: 3.1vw;
@@ -187,7 +186,7 @@ body {
 .word-about_item {
   border-radius: 1vw;
   width: 29vw;
-  height: 13.4vw;
+  height: 13.2vw;
   background-color: #ffffff;
   padding: 1.8vw 0 0 1.8vw;
 }
@@ -202,6 +201,7 @@ body {
   font-size: 1.3vw;
   margin-right: 0.1vw;
   line-height: 1.61vw;
+  color: #666666;
 }
 
 .excel {
@@ -215,13 +215,12 @@ body {
 }
 .excel_items {
   position: absolute;
-  top: 52.77%;
+  top: 52.1%;
   left: 50%;
   z-index: 100;
   transform: translate(-50%, -50%);
-  width: 59vw;
-  height: 32.91vw;
-  background-color: #cf3e28;
+  width: 57.9vw;
+  height: 32.2vw;
 }
 .excel-about_img {
   width: 100%;
@@ -245,7 +244,7 @@ body {
   line-height: 2.1vw;
   font-weight: 400;
   font-size: 1.58vw;
-  margin-bottom: 2.4vw;
+  margin-bottom: 2.3vw;
   position: relative;
 }
 .advantages_item::before {
@@ -272,9 +271,10 @@ body {
 }
 .footer_logo {
   display: block;
-  width: 14vw;
+  width: 12vw;
   box-sizing: content-box;
   margin-top: -0.3vw;
+  margin-left: 1vw;
 }
 .footer_contact {
   display: flex;
@@ -297,4 +297,16 @@ body {
   font-size: 2.8vw;
   margin-right: 1.3vw;
   letter-spacing: -0.07vw;
+}
+
+.transparent {
+  opacity: 0.5;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+.visible {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

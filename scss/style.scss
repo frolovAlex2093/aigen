@@ -1,26 +1,26 @@
 *,
 *::after,
 *::before {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul,
 ol,
 li {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    vertical-align: top;
-    height: auto;
-    max-width: 100%
+  vertical-align: top;
+  height: auto;
+  max-width: 100%;
 }
 
 h1,
@@ -29,344 +29,343 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: inherit;
-    font-size: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 html,
 body {
-    height: 100%;
-    line-height: 1;
-    font-size: 1vw;
-    color: #333333;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    background-color: #ffffff;
+  height: 100%;
+  line-height: 1;
+  font-size: 1vw;
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: #ffffff;
 }
 
 .wrapper {
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 ._container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 9.89vw;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 9.89vw;
 }
 
 ._ibg {
-    position: relative;
+  position: relative;
 }
 
 ._ibg img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 
 .header {
-    margin-top: 3.6vw;
+    margin-top: 3.5vw;
+  
+    margin-bottom: 23.9vw;
 
-    &_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+  &_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_logo {
+    display: block;
+    width: 12vw;
+    box-sizing: content-box;
+  }
+
+  &_info {
+    margin-top: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  &_phone {
+    & a {
+      color: #333333;
+      font-weight: 500;
+      font-size: 1.6vw;
     }
 
-    &_logo {
-        display: block;
-        width: 15vw;
-        box-sizing: content-box
+    margin-bottom: 5px;
+  }
+
+  &_address {
+    & a {
+      color: #333333;
+      font-size: 1.04vw;
+      line-height: 1.44vw;
     }
+  }
 
-    &_info {
-        margin-top: 0.5vw;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
+  &_email {
+    & a {
+      color: #cf3e28;
+      margin-right: 0.3vw;
     }
-
-    &_phone {
-        & a {
-            color: #333333;
-            font-weight: 500;
-            font-size: 1.6vw;
-        }
-
-        margin-bottom: 5px;
-
-    }
-
-    &_address {
-
-        & a {
-            color: #333333;
-            font-size: 1.04vw;
-            line-height: 1.44vw;
-        }
-    }
-
-    &_email {
-        & a {
-            color: #cf3e28;
-            margin-right: 0.3vw;
-
-        }
-    }
+  }
 }
 
 .about {
+  position: fixed ;
+  z-index: 100;
+  margin-top: 13.3vw;
 
-    margin-top: 5.2vw;
+  &_container {
+  }
 
-    &_container {}
+  &_item {
+    margin-bottom: 2.33vw;
+    font-size: 1.6vw;
+    line-height: 2.15vw;
+    letter-spacing: 0.005vw;
 
-    &_item {
-        margin-bottom: 2.33vw;
-        font-size: 1.6vw;
-        line-height: 2.15vw;
-        letter-spacing: 0.005vw;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 }
 
 .word {
-    margin-top: 3.97vw;
+//   margin-top: 3.97vw;
 
-    &_container {
+  &_container {
+    position: relative;
+  }
 
+  &_img {
+    width: 100%;
+  }
 
-
-        position: relative;
-    }
-
-    &_img {
-        width: 100%;
-    }
-
-    &_items {
-
-        position: absolute;
-        top: 44%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-        background-color: #cf3e28;
-        width: 68vw;
-        height: 39.5vw;
-    }
+  &_items {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 66.6vw;
+    height: 38.3vw;
+  }
 }
 
-
 .swiper {
+  width: 100%;
+  height: 100%;
+
+  &-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-slide {
     width: 100%;
     height: 100%;
 
-    &-wrapper {
-        width: 100%;
-        height: 100%;
+    & img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
     }
-
-    &-slide {
-        width: 100%;
-        height: 100%;
-
-        & img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
-    }
+  }
 }
 
-
 .word-about {
+  background-color: #e1e5e6;
+  padding-bottom: 4.3vw;
 
-    background-color: #e1e5e6;
-    padding-bottom: 4.3vw;
+  &_container {
+    display: flex;
+    flex-direction: column;
 
-    &_container {
-        display: flex;
-        flex-direction: column;
+    padding: 0 4.7vw;
+  }
 
-        padding: 0 5vw;
+  &_items {
+    margin-top: 3.1vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 1.3vw;
+
+    &:last-child {
+      margin-bottom: 0vw;
+      margin-top: 0;
     }
 
-    &_items {
-
-        margin-top: 3.1vw;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        margin-bottom: 1.3vw;
-
-        &:last-child {
-            margin-bottom: 0vw;
-            margin-top: 0;
-        }
-
-        &:last-child &_item {
-            padding-top: 3vw;
-        }
+    &:last-child &_item {
+      padding-top: 3vw;
     }
+  }
 
-    &_item {
-        border-radius: 1vw;
+  &_item {
+    border-radius: 1vw;
 
-        width: 29vw;
-        height: 13.4vw;
+    width: 29vw;
+    height: 13.2vw;
 
-        background-color: #ffffff;
-        padding: 1.8vw 0 0 1.8vw;
+    background-color: #ffffff;
+    padding: 1.8vw 0 0 1.8vw;
+  }
 
+  &_header {
+    font-size: 1.6vw;
+    line-height: 1.8vw;
+    font-weight: 500;
+    margin-bottom: 0.5vw;
+  }
 
-    }
-
-    &_header {
-        font-size: 1.6vw;
-        line-height: 1.8vw;
-        font-weight: 500;
-        margin-bottom: 0.5vw;
-    }
-
-    &_text {
-        font-weight: 400;
-        font-size: 1.3vw;
-        margin-right: 0.1vw;
-        line-height: 1.61vw;
-    }
+  &_text {
+    font-weight: 400;
+    font-size: 1.3vw;
+    margin-right: 0.1vw;
+    line-height: 1.61vw;
+    color: #666666;
+  }
 }
 
 .excel {
-    background-color: #dcdddd;
+  background-color: #dcdddd;
 
+  &_container {
+    position: relative;
+  }
 
+  &_img {
+    width: 100%;
+  }
 
-    &_container {
-        position: relative;
-    }
+  &_items {
+    position: absolute;
+    top: 52.1%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+    width: 57.9vw;
+    height: 32.2vw;
+  }
 
-    &_img {
-        width: 100%;
-    }
-
-    &_items {
-        position: absolute;
-        top: 52.77%;
-        left: 50%;
-        z-index: 100;
-        transform: translate(-50%, -50%);
-        width: 59vw;
-        height: 32.91vw;
-        background-color: #cf3e28;
-    }
-
-    &_item {}
+  &_item {
+  }
 }
 
 .excel-about {
-    &_container {}
+  &_container {
+  }
 
-    &_img {
-        width: 100%;
-    }
+  &_img {
+    width: 100%;
+  }
 }
 
 .advantages {
-    background-color: #414244;
+  background-color: #414244;
 
-    &_container {
-        margin: 0 auto;
-        color: #ffffff;
-        // width: 70vw;
+  &_container {
+    margin: 0 auto;
+    color: #ffffff;
+    // width: 70vw;
+  }
+
+  &_header {
+    margin-top: 4.5vw;
+    padding-bottom: 2.2vw;
+
+    font-weight: 400;
+    font-size: 2.5vw;
+
+    letter-spacing: 0.06vw;
+  }
+
+  &_items {
+    
+  }
+
+  &_item {
+    line-height: 2.1vw;
+    font-weight: 400;
+    font-size: 1.58vw;
+    margin-bottom: 2.3vw;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.9vw;
+      left: -2vw;
+      z-index: 10;
+      width: 1vw;
+      height: 0.1vw;
+      background-color: #ffffff;
     }
-
-    &_header {
-        margin-top: 4.5vw;
-        padding-bottom: 2.2vw;
-
-        font-weight: 400;
-        font-size: 2.5vw;
-
-        letter-spacing: 0.06vw;
-
-    }
-
-    &_items {}
-
-    &_item {
-        line-height: 2.1vw;
-        font-weight: 400;
-        font-size: 1.58vw;
-        margin-bottom: 2.4vw;
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0.9vw;
-            left: -2vw;
-            z-index: 10;
-            width: 1vw;
-            height: 0.1vw;
-            background-color: #ffffff;
-        }
-    }
+  }
 }
 
 .footer {
-    
-    background-color: #414244;
-    padding-bottom: 5vw;
+  background-color: #414244;
+  padding-bottom: 5vw;
 
-    &_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 4vw;
-        padding: 0 8.8vw;
-    }
+  &_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4vw;
+    padding: 0 8.8vw;
+  }
 
-    &_logo {
-        display: block;
-        width: 14vw;
-        box-sizing: content-box;
-        margin-top: -0.3vw;
-    }
+  &_logo {
+    display: block;
+    width: 12vw;
+    box-sizing: content-box;
+    margin-top: -0.3vw;
+    margin-left: 1vw;
+  }
 
-    &_contact {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+  &_contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-    &_text {
-        color: #7d8082;
-        font-size: 2.5vw;
-        margin-right: 1.1vw;
-        margin-top: -0.5vw;
-        letter-spacing: 0.06vw;
-    }
+  &_text {
+    color: #7d8082;
+    font-size: 2.5vw;
+    margin-right: 1.1vw;
+    margin-top: -0.5vw;
+    letter-spacing: 0.06vw;
+  }
 
-    &_phone {
-        margin-top: -1vw;
-        & a {
-            color: #ffffff;
-            font-weight: 400;
-            font-size: 2.8vw;
-            margin-right: 1.3vw;
-            letter-spacing: -0.07vw;
-            
-        }
+  &_phone {
+    margin-top: -1vw;
+    & a {
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 2.8vw;
+      margin-right: 1.3vw;
+      letter-spacing: -0.07vw;
     }
+  }
+}
+.transparent {
+  opacity: 0.5;
+}
+.wow {
+  visibility: hidden;
+}
+.visible {
+  display: block;
 }
