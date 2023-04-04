@@ -72,8 +72,11 @@ body {
 }
 
 .header {
+  width: 100%;
   margin-top: 3.5vw;
+  position: fixed;
   margin-bottom: 23.9vw;
+  z-index: 100;
 }
 .header_container {
   display: flex;
@@ -87,6 +90,7 @@ body {
   box-sizing: content-box;
 }
 .header_info {
+  justify-content: end;
   margin-top: 0.5vw;
   display: flex;
   flex-direction: column;
@@ -125,6 +129,9 @@ body {
   margin-bottom: 0;
 }
 
+.word {
+  margin-top: 32.1vw;
+}
 .word_container {
   position: relative;
 }
