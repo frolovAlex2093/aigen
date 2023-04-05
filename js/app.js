@@ -24,38 +24,52 @@ const fixedBlockHeader = document.querySelector(".header");
 const contentBlock = document.querySelector(".word");
 
 window.addEventListener("scroll", () => {
-  if (contentBlock.getBoundingClientRect().top <= fixedBlock2.offsetHeight + document.documentElement.clientWidth * 16.6 / 100) {
-    fixedBlock2.classList.remove("animate__animated");
+  fixedBlock2.classList.remove("animate__animated");
     fixedBlock2.classList.remove("animate__fadeInUp");
-    fixedBlock2.classList.add("animate__animated");
-    fixedBlock2.classList.add("animate__fadeOutUp");
-  } else {
-    fixedBlock2.classList.remove("animate__animated");
-    fixedBlock2.classList.remove("animate__fadeOutUp");
-    fixedBlock2.classList.add("animate__animated");
-    fixedBlock2.classList.add("animate__fadeInUp");
-  }
-  if (contentBlock.getBoundingClientRect().top <= fixedBlock1.offsetHeight + document.documentElement.clientWidth * 12 / 100) {
-    fixedBlock1.classList.remove("animate__animated");
+  fixedBlock1.classList.remove("animate__animated");
     fixedBlock1.classList.remove("animate__fadeInUp");
-    fixedBlock1.classList.add("animate__animated");
-    fixedBlock1.classList.add("animate__fadeOutUp");
-  } else {
-    fixedBlock1.classList.remove("animate__animated");
-    fixedBlock1.classList.remove("animate__fadeOutUp");
-    fixedBlock1.classList.add("animate__animated");
-    fixedBlock1.classList.add("animate__fadeInUp");
-  }
-  if (contentBlock.getBoundingClientRect().top <= fixedBlockHeader.offsetHeight + document.documentElement.clientWidth * 5 / 100) {
     fixedBlockHeader.classList.remove("animate__animated");
     fixedBlockHeader.classList.remove("animate__fadeInUp");
-    fixedBlockHeader.classList.add("animate__animated");
-    fixedBlockHeader.classList.add("animate__fadeOutUp");
+
+// меньше ниже
+//первый блок 50%
+  if (contentBlock.getBoundingClientRect().top <= fixedBlockHeader.offsetHeight + document.documentElement.clientWidth * 20 / 100) {
+    fixedBlock2.style.opacity = "50%";
   } else {
-    fixedBlockHeader.classList.remove("animate__animated");
-    fixedBlockHeader.classList.remove("animate__fadeOutUp");
-    fixedBlockHeader.classList.add("animate__animated");
-    fixedBlockHeader.classList.add("animate__fadeInUp");
+    fixedBlock2.style.opacity = "100%";
+  } 
+
+//первый блок 0
+   if (contentBlock.getBoundingClientRect().top <= fixedBlockHeader.offsetHeight + document.documentElement.clientWidth * 15 / 100) {
+    
+     fixedBlock2.style.opacity = "0%";
+   } else if(contentBlock.getBoundingClientRect().top > fixedBlockHeader.offsetHeight + document.documentElement.clientWidth * 15 / 100 && contentBlock.getBoundingClientRect().top <= fixedBlockHeader.offsetHeight + document.documentElement.clientWidth * 17 / 100) {
+    fixedBlock2.style.opacity = "50%";
+   }
+
+// второй блок 50
+   if (contentBlock.getBoundingClientRect().top <= fixedBlockHeader.offsetHeight + document.documentElement.clientWidth * 12 / 100) {
+    fixedBlock1.style.opacity = "50%";
+    
+  } else {
+     fixedBlock1.style.opacity = "100%";
+  }
+
+//второй блок 0
+  if (contentBlock.getBoundingClientRect().top <= fixedBlockHeader.offsetHeight + document.documentElement.clientWidth * 10 / 100) {
+    fixedBlock1.style.opacity = "0%";
+    
+  } else if(contentBlock.getBoundingClientRect().top > fixedBlockHeader.offsetHeight + document.documentElement.clientWidth * 10 / 100 && contentBlock.getBoundingClientRect().top <= fixedBlockHeader.offsetHeight + document.documentElement.clientWidth * 12 / 100) {
+     fixedBlock1.style.opacity = "50%";
+
+  }
+  
+  //хедер 0
+  if (contentBlock.getBoundingClientRect().top <= fixedBlockHeader.offsetHeight + document.documentElement.clientWidth * 2 / 100) {
+    fixedBlockHeader.style.opacity = "0%";
+  } else {
+    fixedBlockHeader.style.opacity = "100%";
+
   }
 });
 

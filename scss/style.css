@@ -76,7 +76,8 @@ body {
   margin-top: 3.5vw;
   position: fixed;
   margin-bottom: 23.9vw;
-  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 .header_container {
   display: flex;
@@ -116,7 +117,6 @@ body {
 
 .about {
   position: fixed;
-  z-index: 100;
   margin-top: 13.3vw;
 }
 .about_item {
@@ -124,6 +124,8 @@ body {
   font-size: 1.6vw;
   line-height: 2.15vw;
   letter-spacing: 0.005vw;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
 }
 .about_item:last-child {
   margin-bottom: 0;
@@ -131,6 +133,7 @@ body {
 
 .word {
   margin-top: 32.1vw;
+  z-index: 100;
 }
 .word_container {
   position: relative;
@@ -304,10 +307,6 @@ body {
   font-size: 2.8vw;
   margin-right: 1.3vw;
   letter-spacing: -0.07vw;
-}
-
-.transparent {
-  opacity: 0.5;
 }
 
 .wow {
