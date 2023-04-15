@@ -9,6 +9,22 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+const swiper2 = new Swiper(".swiper_2", {
+  speed: 1000,
+  spaceBetween: 100,
+  slidesPerView: 1.218,
+  //slidesPerGroup: 1,
+  //effect: "fade",
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  // autoplay: {
+  //   delay: 2000,
+  // },
+});
+
 wow = new WOW({
   boxClass: "wow",
   animateClass: "animate__slideInUp",

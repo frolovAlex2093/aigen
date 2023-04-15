@@ -309,10 +309,168 @@ body {
   letter-spacing: -0.07vw;
 }
 
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
 .wow {
   visibility: hidden;
 }
 
 .visible {
   display: block;
+}
+
+@media (max-width: 1080px) {
+  ._container {
+    padding: 0 5.1vw;
+  }
+  .header {
+    position: static;
+    margin-bottom: 6vw;
+  }
+  .header_logo {
+    width: 35vw;
+  }
+  .header_info {
+    margin-top: -1.5vw;
+  }
+  .header_phone {
+    margin-bottom: -2vw;
+  }
+  .header_phone a {
+    font-size: 3.65vw;
+    line-height: 13vw;
+  }
+  .header_address a {
+    font-size: 2.73vw;
+    line-height: 1vw;
+  }
+  .header_email a {
+    font-size: 2.74vw;
+  }
+  .about {
+    position: static;
+    margin-top: 0;
+    margin-bottom: 9.4vw;
+  }
+  .about_item {
+    font-size: 3.4vw;
+    line-height: 5.6vw;
+    letter-spacing: 0.18vw;
+    margin-bottom: 5.4vw;
+  }
+  .about_br {
+    display: none;
+  }
+  .word {
+    background-color: #2083d0;
+    height: 63vw;
+    margin-top: 0vw;
+  }
+  .word_img {
+    display: none;
+  }
+  .word_items {
+    transform: translate(-50%, 10%);
+    width: 90vw;
+    height: 51.7vw;
+    border-radius: 2vw;
+  }
+  .word-about {
+    padding-top: 5.3vw;
+    background-color: #e1e5e6;
+  }
+  .word-about_item {
+    margin: 0 5vw;
+    height: 38.6vw;
+    width: 85vw;
+    padding-top: 4.5vw;
+    padding-left: 4.7vw;
+    border-radius: 2vw;
+  }
+  .word-about_header {
+    font-size: 4.7vw;
+    line-height: 5.2vw;
+    letter-spacing: -0.04vw;
+    margin-bottom: 1.9vw;
+  }
+  .word-about_text {
+    font-size: 4.1vw;
+    line-height: 4.6vw;
+    letter-spacing: -0.2vw;
+  }
+  .swiper-wrapper {
+    margin-bottom: 4vw;
+  }
+  .swiper-pagination {
+    position: static !important;
+  }
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 2vw)) !important;
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 2vw)) !important;
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0.6vw) !important;
+  }
+  .excel {
+    height: 61vw;
+    background-color: #5b895f;
+    margin-top: -1vw;
+  }
+  .excel_img {
+    display: none;
+  }
+  .excel_items {
+    width: 89.9vw;
+    height: 50.1vw;
+    transform: translate(-50%, 10%);
+  }
+  .advantages_header {
+    margin-top: 8.8vw;
+    padding-bottom: 3.4vw;
+    font-size: 4.5vw;
+    margin-left: 4.7vw;
+  }
+  .advantages_item {
+    line-height: 4.6vw;
+    font-weight: 400;
+    font-size: 3.35vw;
+    margin-bottom: 4.7vw;
+    margin-left: 4.7vw;
+  }
+  .advantages_item::before {
+    top: 2.1vw;
+    left: -4.6vw;
+    z-index: 10;
+    width: 2.1vw;
+    height: 0.1vw;
+  }
+  .footer_container {
+    flex-direction: column-reverse;
+  }
+  .footer_text {
+    font-size: 4.6vw;
+    margin-right: 2.5vw;
+    margin-top: -1.9vw;
+    margin-left: 0.7vw;
+  }
+  .footer_phone {
+    margin-top: -2.4vw;
+  }
+  .footer_phone a {
+    font-size: 4.5vw;
+  }
+  .footer_logo {
+    margin-top: 8.5vw;
+    width: 30.2vw;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
