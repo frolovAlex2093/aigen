@@ -3,113 +3,25 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 100,
   effect: "fade",
   loop: true,
-
   autoplay: {
     delay: 2000,
   },
 });
-if(window.innerWidth > 935){
+// if(window.innerWidth <= 1080){
 const swiper2 = new Swiper(".swiper_2", {
   speed: 1000,
-  spaceBetween: 100,
-  slidesPerView: 1.218,
-  //slidesPerGroup: 1,
-  //effect: "fade",
-  loop: true,
+  // autoplay: {
+  //   delay: 4000,
+  // },
+  slidesPerView: 1.11,
+  slidesPerGroup: 1,
+  spaceBetween: 0,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
-  // autoplay: {
-  //   delay: 2000,
-  // },
+  
 });
-}
-if(window.innerWidth <= 935){
-  const swiper2 = new Swiper(".swiper_2", {
-    speed: 1000,
-    spaceBetween: 100,
-    slidesPerView: 1.248,
-    //slidesPerGroup: 1,
-    //effect: "fade",
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    // autoplay: {
-    //   delay: 2000,
-    // },
-  });
-}
-if(window.innerWidth <= 729){
-  const swiper2 = new Swiper(".swiper_2", {
-    speed: 1000,
-    spaceBetween: 100,
-    slidesPerView: 1.278,
-    //slidesPerGroup: 1,
-    //effect: "fade",
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    // autoplay: {
-    //   delay: 2000,
-    // },
-  });
-}
-if(window.innerWidth <= 627){
-  const swiper2 = new Swiper(".swiper_2", {
-    speed: 1000,
-    spaceBetween: 100,
-    slidesPerView: 1.298,
-    //slidesPerGroup: 1,
-    //effect: "fade",
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    // autoplay: {
-    //   delay: 2000,
-    // },
-  });
-}
-if(window.innerWidth <= 470){
-  const swiper2 = new Swiper(".swiper_2", {
-    speed: 1000,
-    spaceBetween: 100,
-    slidesPerView: 1.398,
-    //slidesPerGroup: 1,
-    //effect: "fade",
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    // autoplay: {
-    //   delay: 2000,
-    // },
-  });
-}
-if(window.innerWidth <= 345){
-  const swiper2 = new Swiper(".swiper_2", {
-    speed: 1000,
-    spaceBetween: 100,
-    slidesPerView: 1.438,
-    //slidesPerGroup: 1,
-    //effect: "fade",
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    // autoplay: {
-    //   delay: 2000,
-    // },
-  });
-}
 
 
 if (window.innerWidth <= 1080) {
@@ -125,11 +37,6 @@ if (window.innerWidth <= 1080) {
   document.querySelector(".sticky_2").classList.remove('animate__animated');
   document.querySelector(".sticky_2").classList.remove('animate__fadeInUp');
   document.querySelector(".sticky_2").classList.remove('sticky_2');
-
-
- 
-
-
 }
 
 wow = new WOW({

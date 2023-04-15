@@ -384,7 +384,7 @@ body {
   }
   .header {
     position: static;
-    margin-bottom: 6vw;
+    margin-bottom: 5.5vw;
     &_logo {
       width: 35vw;
     }
@@ -392,21 +392,22 @@ body {
       margin-top: -1.5vw;
     }
     &_phone {
-      margin-bottom: -2vw;
-      //margin-top: -12vw;
+      margin-top: 5vw;
+      margin-bottom: 3.5vw;
     }
     &_phone a {
       font-size: 3.65vw;
-      line-height: 13vw;
+      line-height: 3vw;
     }
-    &_address{
-      & a{
+    &_address {
+      & a {
         font-size: 2.73vw;
         line-height: 1vw;
       }
     }
-    &_email{
-      & a{
+    &_email {
+      margin-top: 0.7vw;
+      & a {
         font-size: 2.74vw;
       }
     }
@@ -429,9 +430,6 @@ body {
     background-color: #2083d0;
     height: 63vw;
     margin-top: 0vw;
-
-    //margin-bottom: 5.3vw;
-
     &_img {
       display: none;
     }
@@ -446,13 +444,15 @@ body {
     padding-top: 5.3vw;
     background-color: #e1e5e6;
     &_item {
-      margin: 0 5vw;
       height: 38.6vw;
       width: 85vw;
+      margin-left: 5vw;
+      margin-right: 5vw;
       padding-top: 4.5vw;
       padding-left: 4.7vw;
       border-radius: 2vw;
     }
+
     &_header {
       font-size: 4.7vw;
       line-height: 5.2vw;
@@ -466,10 +466,8 @@ body {
     }
   }
   .swiper-wrapper {
+    padding-right: 5vw !important;
     margin-bottom: 4vw;
-  }
-  .swiper-slide .swiper-slide-active {
-    //width: 864px !important;
   }
   .swiper-pagination {
     position: static !important;
@@ -504,7 +502,7 @@ body {
 
   .advantages {
     &_header {
-      margin-top: 8.8vw;
+      margin-top: 9.2vw;
       padding-bottom: 3.4vw;
       font-size: 4.5vw;
       margin-left: 4.7vw;
@@ -535,13 +533,13 @@ body {
       margin-top: -1.9vw;
       margin-left: 0.7vw;
     }
-    &_phone{
+    &_phone {
       margin-top: -2.4vw;
-      & a{
+      & a {
         font-size: 4.5vw;
       }
-    } 
-    &_logo{
+    }
+    &_logo {
       margin-top: 8.5vw;
       width: 30.2vw;
     }
